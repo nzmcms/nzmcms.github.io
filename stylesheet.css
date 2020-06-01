@@ -16,7 +16,7 @@ a {
 .top-wrapper {
   padding: 180px 0 100px 0;
 /*背景画像を表示する場合はbackground-image: url(画像url);*/
-  background-image: url(P6cQBvXM4II5Bt41590748566_1590748591.png);
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
   /*background-imageは表示範囲を埋めつくすまで繰り返し表示されるため、以下で「一枚で埋め尽くす」処理をする*/
   background-size: cover;
   color: white;
@@ -78,7 +78,7 @@ header {
   top: 0;
   
   
-  /*x,y,z空間のz(奥行)を10に設定し、一番上に表示*/
+  /*x,y,z空間のz(奥行)を10に設定一番上に表示*/
   z-index: 10;
 }
 
