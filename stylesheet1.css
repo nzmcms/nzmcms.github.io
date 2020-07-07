@@ -1,0 +1,95 @@
+body {
+  background-image: url(D788sCZeljDmbKx1594030319_1594030326.png);
+}
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);/*rgb(三つの値)で色指定も可能、rgba(四つの値)で背景だけの透過が可能（四つ目が透明度の値）*/
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position: fixed;/*ポジションを以下の指定位置に固定*/
+  top: 0;
+  
+  color: aliceblue;
+  /* z-indexを10に指定してください */
+  z-index: 10;
+}
+.header-left p {
+  padding-left: 30px;
+}
+
+}
+
+.top-wrapper {
+  /* padding: 50px 0 50px 0; */
+/*背景画像を表示する場合はbackground-image: url(画像url);*/
+
+  /*background-imageは表示範囲を埋めつくすまで繰り返し表示されるため、以下で「一枚で埋め尽くす」処理をする*/
+  /* background-size: cover; */
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.image {
+  margin-top: 100px;
+  padding: 100px 140px;
+  border: aliceblue;
+}
+
+.header-left {
+  float: left;
+}
+.header-right li {
+  padding: 0px 30px;
+  float: right;
+  list-style-type: none;
+}
+ main {
+   /* color: white; */
+   /* background-color: rgb(23, 76, 192); */
+ }
+ legend h1 {
+   font-style: ;
+
+ }
+ fieldset {
+   margin: 0px 40px 30px 40px;
+ }
+ section {
+   margin-bottom: 100px;
+   padding: 10px 0px;
+   background-color: rgba(245, 247, 241, 0.884);
+   box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.7);
+ }
+ /* .facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+} */
+.btn {
+  padding: 8px 24px;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+}
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+/* faクラスのmargin-rightを5pxに指定してください */
+/* .fa {
+  margin-right: 5px;
+} */
