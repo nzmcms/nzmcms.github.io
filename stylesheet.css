@@ -1,38 +1,78 @@
 body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  background-image: url(D788sCZeljDmbKx1594030319_1594030326.png);
+}
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);/*rgb(三つの値)で色指定も可能、rgba(四つの値)で背景だけの透過が可能（四つ目が透明度の値）*/
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position: fixed;/*ポジションを以下の指定位置に固定*/
+  top: 0;
+  
+  color: aliceblue;
+  /* z-indexを10に指定してください */
+  z-index: 10;
+}
+.header-left p {
+  padding-left: 30px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;/*クラス全体を中央寄せにするにはmargin: 0 auto;が有効、ただしwidthが必須*/
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  /* padding: 50px 0 50px 0; */
 /*背景画像を表示する場合はbackground-image: url(画像url);*/
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+
   /*background-imageは表示範囲を埋めつくすまで繰り返し表示されるため、以下で「一枚で埋め尽くす」処理をする*/
-  background-size: cover;
+  /* background-size: cover; */
   color: white;
   text-align: center;
+  margin: auto;
+}
+.image {
+  margin-top: 100px;
+  padding: 100px 140px;
+  border: aliceblue;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;/*opacityプロパティで透明度(0.0-1.0)を指定*/
-  font-size: 45px;
-  letter-spacing: 5px;/*文字の間隔指定*/
+.header-left {
+  float: left;
+}
+.header-right li {
+  padding: 0px 30px;
+  float: right;
+  list-style-type: none;
+}
+ main {
+
+ }
+ legend h1 {
+   font-style: ;
+
+ }
+ fieldset {
+   margin: 0px 40px 30px 40px;
+ }
+ section {
+   margin-bottom: 100px;
+   padding: 10px 0px;
+   background-color: rgba(245, 247, 241, 0.884);
+   box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.7);
+ }
+
+.btn {
+  padding: 8px 24px;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
 }
 
-.top-wrapper p {
-  opacity: 0.7;
+.btn:hover {
+  opacity: 1;
 }
 
+
+}
 .btn-wrapper {
   margin: 20px 0;
 }
@@ -41,147 +81,3 @@ a {
   margin: 10px 0;
 }
 
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;/*displayプロパティはブロック要素またはインライン要素をインラインブロック要素(width,height,横並びが指定可能)に変えられる（他にも変更可能）*/
-  opacity: 0.8;
-  border-radius: 4px;/*radiusは枠線の角を丸くする、数字が大きいほど角の円が大きくなるため丸くなる*/
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);/*rgb(三つの値)で色指定も可能、rgba(四つの値)で背景だけの透過が可能（四つ目が透明度の値）*/
-  position: fixed;/*ポジションを以下の指定位置に固定*/
-  top: 0;
-  
-  
-  /*x,y,z空間のz(奥行)を10に設定一番上に表示*/
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;/*transition: 変化の対象 変化にかかる時間;*/
-}
-
-.header-right:hover {/*クラス名:hovor{ でカーソルが乗ったときの処理を指定*/
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right a {
-  line-height: 65px;/*行間の幅調整、文字の縦方向の中央揃えにも有効*/
-  padding: 0 25px;
-  color: white;
-  display: block;/*インラインからブロックに変更しカーソルを合わせたとき文字以外の枠内も反応させる*/
-}
-
-.lesson-wrapper {
-  height: 500px;
-  padding-bottom: 80px;
-  background-color: #f7f7f7;
-  text-align: center;/*テキストのインライン要素、インラインブロック要素の配置を決める(右、中央、左寄せ）*/
-  /*広い範囲を囲うブロック要素の場合はmargin: 0 auto;(width必須)が有効*/
-}
-
-.heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;/*文字の太さ変更(デフォルトはbold)*/
-}
-
-.lesson {
-  float: left;
-  width: 25%;/*ボックスの幅や高さをpxでなく%で指定すると指定範囲全体に対する割合で表示される*/
-}
-
-.lesson-icon {
-  position: relative;/*relativeだとこの要素が表示される範囲の左上が基準、親要素の基準をrelativeで指定したため子要素の基準はその要素の左上になる*/
-}
-
-.lesson-icon p {
-  position: absolute;/*position: absolute;でサイト全体の左上を基準に、top,left用いて要素の位置を決める（要素の重ね表示が可能）*/
-  top: 90px;
-  width: 100%;
-  color: white;
-}
-
-.txt-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 12px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;/*カーソルが要素に乗った時のカーソルの形変更(text,default)*/
-  box-shadow: 0 7px #1a7940;/*ボックスに影をつけるにはbox-shadow:水平 垂直　色;*/
-}
-
-.message:active {/*要素がクリックされているときの処理*/
-  position: relative;/*本来の位置からずらす*/
-  top: 7px;
-  box-shadow: none;/*押したら影が消える（消さないと影があるままへこむ）*/
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-}
